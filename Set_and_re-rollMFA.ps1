@@ -14,10 +14,10 @@ Connect-AzureAD
 Connect-MsolService
 
 # Path to your input CSV (must have header "UserPrincipalName")
-$CsvPath = "C:\tsa\users.csv"
+$CsvPath = "C:\temp\users.csv"
 
 # Path where your log will be written
-$LogPath = "C:\tsa\MFA_enforcement_log.csv"
+$LogPath = "C:\temp\MFA_enforcement_log.csv"
 
 # If a previous log exists, remove it so we start fresh
 if (Test-Path $LogPath) {
